@@ -1,0 +1,17 @@
+#include<stdio.h>
+
+int main() {
+    int n,i,evensum,oddsum,diff;
+    scanf("%d",&n);
+    for(i=1;i<=10;i++) {
+        if(i%2==0) {
+            evensum = evensum + i;
+        } else {
+            oddsum = oddsum + i;
+        }
+    }
+    printf("Odd Sum = %d\n",oddsum);
+    printf("Even Sum = %d\n",evensum);
+    diff = oddsum - evensum;
+    printf("Difference = %d",diff);
+}
