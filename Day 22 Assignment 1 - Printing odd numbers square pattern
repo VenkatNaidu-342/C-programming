@@ -1,17 +1,16 @@
 #include <stdio.h>
 
 int main() {
-    int r, c, i;
-    i = 1;
+    int r, c, i = 1;
 
-    for (r = 1; r <= 3; r++) {
-        for (c = 1; c <= 4; c++) {
+    for(r = 1; r <= 3; r++) {
+        for(c = 0; c < 4; c++) {
             printf("%d\t", i);
-            i = i + 2;
+            i += 2;
         }
-        i = i - 6;
         printf("\n");
+        i -= 4;
     }
-    
+
     return 0;
 }
